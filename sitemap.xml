@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://studiodicatarina.com.br/</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://studiodicatarina.com.br/assets/images/hero_studio.png</image:loc>
+      <image:title>Studio Di Catarina Salão de Beleza em Barueri</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://studiodicatarina.com.br/assets/images/cabelo_service.png</image:loc>
+      <image:title>Procedimento de Mechas e Cabelos Barueri</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://studiodicatarina.com.br/assets/images/unha_service.png</image:loc>
+      <image:title>Alongamento de Unhas em Gel Barueri</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://studiodicatarina.com.br/assets/images/sobrancelha_service.png</image:loc>
+      <image:title>Design de Sobrancelhas e Henna Barueri</image:title>
+    </image:image>
+  </url>
+</urlset>

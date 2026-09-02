@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+
+  <!-- PRECONNECT & DNS-PREFETCH (CORE WEB VITALS - CARREGAMENTO MAIS RÁPIDO) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="dns-prefetch" href="https://www.google.com">
+  <link rel="dns-prefetch" href="https://wa.me">
+
+  <!-- PRELOAD DA HERO IMAGE (LCP - LARGEST CONTENTFUL PAINT) -->
+  <link rel="preload" as="image" href="assets/images/hero_studio.png" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/logo.png">
+  
+  <!-- SUPER SEO TITLE & META TAGS -->
+  <title>Studio Di Catarina | Salão de Beleza em Barueri - SP (Cabelo, Unha & Sobrancelha)</title>
+  <meta name="description" content="Studio Di Catarina em Barueri - SP. Especialistas em Mechas, Morena Iluminada, Alongamento de Unhas em Gel e Design de Sobrancelhas no Parque Imperial. Agende pelo WhatsApp (11) 91061-8237!">
+  <meta name="keywords" content="Studio Di Catarina, Salão de beleza em Barueri, Salão Parque Imperial Barueri, Cabelereiro Barueri, Mechas Barueri, Morena Iluminada Barueri, Unhas em gel Barueri, Design de sobrancelhas Barueri, Manicure Parque Imperial Barueri, Salão perto de Alphaville">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="Studio Di Catarina">
+  <link rel="canonical" href="https://studiodicatarina.com.br/">
+
+  <!-- SEO LOCAL GEO META TAGS -->
+  <meta name="geo.region" content="BR-SP">
+  <meta name="geo.placename" content="Barueri">
+  <meta name="geo.position" content="-23.5041;-46.8048">
+  <meta name="ICBM" content="-23.5041, -46.8048">
+
+  <!-- GEO (GENERATIVE ENGINE OPTIMIZATION) — OTIMIZAÇÃO PARA IAs -->
+  <link rel="alternate" type="text/plain" href="llms.txt" title="Informações para assistentes de IA">
+  <link rel="alternate" type="application/json" href=".well-known/ai-plugin.json" title="AI Plugin Metadata">
+  <meta name="ai-content-declaration" content="Este site contém informações verificadas sobre o Studio Di Catarina, salão de beleza em Barueri, SP, Brasil. Todas as informações de endereço, telefone, serviços e horários são oficiais e atualizadas.">
+  <meta name="subject" content="Salão de Beleza especializado em Cabelo, Unha e Sobrancelha em Barueri SP, próximo a Alphaville">
+  <meta name="classification" content="Beauty Salon, Hair Salon, Nail Salon, Eyebrow Design">
+
+  <!-- PWA Web App Meta Tags & Manifest -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#121010">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Di Catarina">
+  <meta name="application-name" content="Studio Di Catarina">
+
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="apple-touch-icon" href="assets/images/icon-192.png">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="business.business">
+  <meta property="og:site_name" content="Studio Di Catarina">
+  <meta property="og:title" content="Studio Di Catarina | Salão de Beleza em Barueri - SP">
+  <meta property="og:description" content="Especialistas em Cabelo, Unhas em Gel e Sobrancelhas no Parque Imperial, Barueri - SP. Clique para agendar seu horário no WhatsApp!">
+  <meta property="og:image" content="https://studiodicatarina.com.br/assets/images/logo.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+  <meta property="og:url" content="https://studiodicatarina.com.br/">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="business:contact_data:street_address" content="R. Frei Henrique Soares de Coimbra, 251">
+  <meta property="business:contact_data:locality" content="Barueri">
+  <meta property="business:contact_data:region" content="SP">
+  <meta property="business:contact_data:postal_code" content="06462-190">
+  <meta property="business:contact_data:country_name" content="Brasil">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Studio Di Catarina | Salão de Beleza em Barueri - SP">
+  <meta name="twitter:description" content="Mechas, Unhas em Gel e Sobrancelhas em Barueri. Agende pelo WhatsApp!">
+  <meta name="twitter:image" content="https://studiodicatarina.com.br/assets/images/hero_studio.png">
+
+  <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- SUPER SEO STRUCTURED DATA GRAPH (SCHEMA.ORG) -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "BeautySalon",
+      "@id": "https://studiodicatarina.com.br/#salon",
+      "name": "Studio Di Catarina",
+      "image": "https://studiodicatarina.com.br/assets/images/logo.png",
+      "logo": "https://studiodicatarina.com.br/assets/images/logo.png",
+      "url": "https://studiodicatarina.com.br",
+      "telephone": "+5511910618237",
+      "priceRange": "$$",
+      "description": "Salão de beleza especialista em Cabelos (Mechas, Corte, Hidratação), Unhas (Gel, Fibra, Manicure) e Sobrancelhas (Design, Henna, Lamination) no Parque Imperial, Barueri - SP.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Frei Henrique Soares de Coimbra, 251",
+        "addressLocality": "Barueri",
+        "addressRegion": "SP",
+        "postalCode": "06462-190",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -23.5041,
+        "longitude": -46.8048
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "47",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "sameAs": [
+        "https://www.instagram.com/studiodicatarina/",
+        "https://www.facebook.com/studiodicatarina/",
+        "https://share.google/vSRypVfNlSi2TJZSQ",
+        "https://waze.com/ul?q=Rua+Frei+Henrique+Soares+de+Coimbra+251+Barueri"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Catálogo de Serviços de Beleza Studio Di Catarina",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Cabelo",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mechas & Morena Iluminada" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Corte & Tratamento Profundo" } }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Unhas",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Alongamento em Gel e Fibra" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Esmaltação em Gel e Manicure" } }
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Sobrancelha",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Design de Sobrancelhas e Henna" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brow Lamination e Lash Lift" } }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Onde fica localizado o Studio Di Catarina?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O Studio Di Catarina fica localizado na R. Frei Henrique Soares de Coimbra, 251 - Parque Imperial, Barueri - SP, CEP 06462-190."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais os serviços realizados no Studio Di Catarina em Barueri?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Somos especialistas em três áreas: Cabelo (Mechas, Morena Iluminada, Corte, Tratamentos), Unha (Alongamento em Gel, Fibra de Vidro, Manicure, Esmaltação em Gel) e Sobrancelha (Design Personalizado, Henna, Brow Lamination, Lash Lift)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como agendar um horário no Studio Di Catarina?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Você pode agendar seu horário de forma rápida chamando diretamente no WhatsApp (11) 91061-8237."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como chegar ao Studio Di Catarina de Uber, Waze ou Google Maps?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No nosso site oficial disponibilizamos botões diretos para abrir a rota no Waze, solicitar corrida no Uber, 99 ou abrir no Google Maps."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://studiodicatarina.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Serviços em Barueri",
+          "item": "https://studiodicatarina.com.br/#servicos"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Localização Parque Imperial",
+          "item": "https://studiodicatarina.com.br/#localizacao"
+        }
+      ]
+    }
+  ]
+  </script>
+</head>
+<body>
+
+  <!-- PWA WEBAPP INSTALL PROMPT BANNER -->
+  <div class="pwa-install-banner" id="pwaInstallBanner">
+    <div class="pwa-install-info">
+      <img src="assets/images/logo.png" alt="App Studio Di Catarina Salão de Beleza Barueri" width="40" height="40">
+      <div class="pwa-install-text">
+        <h5>App Studio Di Catarina</h5>
+        <p>Instale na tela inicial do celular</p>
+      </div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 8px;">
+      <button class="pwa-install-btn" id="pwaInstallBtn">Instalar</button>
+      <button class="pwa-install-close" id="pwaInstallClose" aria-label="Fechar"><i class="ri-close-line"></i></button>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <a href="#home" class="logo" aria-label="Studio Di Catarina Página Inicial Barueri">
+        <img src="assets/images/logo.png" alt="Logotipo Studio Di Catarina Salão de Beleza Barueri" class="logo-img" width="44" height="44">
+        <div class="logo-text-wrapper">
+          <span class="logo-main text-gold">STUDIO DI CATARINA</span>
+          <span class="logo-sub">BARUERI • SP</span>
+        </div>
+      </a>
+
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#home" class="nav-link active">Início</a></li>
+          <li><a href="#sobre" class="nav-link">Nosso Espaço</a></li>
+          <li><a href="#servicos" class="nav-link">Serviços</a></li>
+          <li><a href="#galeria" class="nav-link">Galeria</a></li>
+          <li><a href="#faq" class="nav-link">Dúvidas</a></li>
+          <li><a href="#localizacao" class="nav-link">Localização</a></li>
+          <li>
+            <a href="https://wa.me/5511910618237?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Studio%20Di%20Catarina." target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding: 10px 20px; font-size: 0.9rem;">
+              <i class="ri-whatsapp-line"></i> Agendar Horário
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir Menu">
+        <i class="ri-menu-line"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="assets/images/hero_studio.png" alt="Ambiente do Salão de Beleza Studio Di Catarina em Barueri SP" width="1920" height="1080">
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="ri-sparkles-fill text-gold"></i>
+          <span>Salão de Beleza em Barueri - SP (Parque Imperial)</span>
+        </div>
+
+        <h1 class="hero-title">
+          Realce Sua Beleza no <span class="text-gold">Studio Di Catarina</span>
+        </h1>
+
+        <p class="hero-description">
+          Referência em <strong>Cabelo (Mechas & Morena Iluminada)</strong>, alongamento de <strong>Unhas em Gel</strong> e design de <strong>Sobrancelhas</strong> em Barueri. Atendimento exclusivo no Parque Imperial.
+        </p>
+
+        <div class="hero-actions">
+          <a href="https://wa.me/5511910618237?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio!" target="_blank" rel="noopener" class="btn btn-primary">
+            <i class="ri-whatsapp-line" style="font-size: 1.2rem;"></i> Agendar no WhatsApp
+          </a>
+          <a href="#localizacao" class="btn btn-secondary">
+            <i class="ri-navigation-line"></i> Como Chegar (Waze / Uber / Maps)
+          </a>
+        </div>
+
+        <div class="hero-features">
+          <a href="#servicos" class="feature-item" style="color: inherit; text-decoration: none;">
+            <div class="feature-icon">
+              <i class="ri-scissors-2-line"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Cabelo</h4>
+              <p>Mechas, Corte & Hidratação</p>
+            </div>
+          </a>
+
+          <a href="#servicos" class="feature-item" style="color: inherit; text-decoration: none;">
+            <div class="feature-icon">
+              <i class="ri-hand-heart-line"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Unhas</h4>
+              <p>Gel, Fibra & Manicure</p>
+            </div>
+          </a>
+
+          <a href="#servicos" class="feature-item" style="color: inherit; text-decoration: none;">
+            <div class="feature-icon">
+              <i class="ri-eye-line"></i>
+            </div>
+            <div class="feature-text">
+              <h4>Sobrancelhas</h4>
+              <p>Design, Henna & Lamination</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT & LOCATION HIGHLIGHT SECTION -->
+  <section class="section-padding rebrand-section" id="sobre">
+    <div class="container">
+      <div class="rebrand-grid">
+        <div class="rebrand-card">
+          <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 16px;">
+            <img src="assets/images/logo.png" alt="Logotipo Oficial Studio Di Catarina Barueri" style="width: 56px; height: 56px; border-radius: 50%; border: 2px solid var(--clr-gold-primary);">
+            <div>
+              <span class="rebrand-tag" style="margin-bottom: 0;">ESTÚDIO DE BELEZA EM BARUERI</span>
+              <h2 class="rebrand-title" style="font-size: 1.5rem; margin-bottom: 0;">Studio Di Catarina</h2>
+            </div>
+          </div>
+
+          <p class="rebrand-text">
+            Localizado no Parque Imperial em Barueri, o Studio Di Catarina une sofisticação, produtos de alta cosmética e um atendimento caloroso para realçar sua autoestima.
+          </p>
+
+          <a href="https://share.google/vSRypVfNlSi2TJZSQ" target="_blank" rel="noopener" class="address-box" style="text-decoration: none; color: inherit; display: flex; transition: var(--transition-fast);">
+            <div class="address-icon">
+              <i class="ri-map-pin-2-fill"></i>
+            </div>
+            <div class="address-info">
+              <h5 style="display: flex; align-items: center; gap: 6px;">
+                Endereço em Barueri <i class="ri-external-link-line" style="font-size: 0.85rem; color: var(--clr-gold-primary);"></i>
+              </h5>
+              <p>R. Frei Henrique Soares de Coimbra, 251 - Parque Imperial<br>Barueri - SP, 06462-190</p>
+            </div>
+          </a>
+        </div>
+
+        <div>
+          <span class="section-subtitle">DIFERENCIAIS</span>
+          <h3 class="section-title">Atendimento Personalizado em Barueri</h3>
+          <p class="section-desc" style="margin-bottom: 24px;">
+            Atendemos clientes de Barueri, Parque Imperial, Alphaville, Tamboré e região com excelência e horários flexíveis.
+          </p>
+
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 14px; margin-bottom: 24px;">
+            <li style="display: flex; align-items: center; gap: 12px;">
+              <i class="ri-checkbox-circle-fill text-gold" style="font-size: 1.2rem;"></i>
+              <span>Especialistas em Mechas, Morena Iluminada e Tratamentos Capilares.</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 12px;">
+              <i class="ri-checkbox-circle-fill text-gold" style="font-size: 1.2rem;"></i>
+              <span>Unhas em Gel duradouras com higienização estrita.</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 12px;">
+              <i class="ri-checkbox-circle-fill text-gold" style="font-size: 1.2rem;"></i>
+              <span>Agendamento prático e rápido via WhatsApp: (11) 91061-8237.</span>
+            </li>
+          </ul>
+
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="https://wa.me/5511910618237?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os." target="_blank" rel="noopener" class="btn btn-whatsapp">
+              <i class="ri-whatsapp-line"></i> (11) 91061-8237
+            </a>
+            <a href="tel:+5511910618237" class="btn btn-secondary">
+              <i class="ri-phone-line"></i> Ligar Agora
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES CATALOG SECTION -->
+  <section class="section-padding services-section" id="servicos">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">SERVIÇOS DE BELEZA EM BARUERI</span>
+        <h2 class="section-title">Nossos Procedimentos de Destaque</h2>
+        <p class="section-desc">Escolha o serviço desejado e consulte disponibilidade de horário no WhatsApp.</p>
+      </div>
+
+      <div class="services-filter">
+        <button class="filter-btn active" data-filter="all">Todos os Serviços</button>
+        <button class="filter-btn" data-filter="cabelo">Cabelos</button>
+        <button class="filter-btn" data-filter="unha">Unhas</button>
+        <button class="filter-btn" data-filter="sobrancelha">Sobrancelhas</button>
+      </div>
+
+      <div class="services-grid" id="servicesGrid">
+        <!-- Service Item 1: Cabelo -->
+        <div class="service-card" data-category="cabelo">
+          <div class="service-img-wrapper">
+            <span class="service-category-tag">Cabelo</span>
+            <img src="assets/images/cabelo_service.png" alt="Procedimento de Mechas e Morena Iluminada em Barueri" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Mechas & Morena Iluminada</h3>
+            <p class="service-desc">Técnica exclusiva de iluminação capilar com proteção dos fios e efeito natural deslumbrante em Barueri.</p>
+            <div class="service-footer">
+              <span class="service-price-consult">Consultar Valor</span>
+              <a href="https://wa.me/5511910618237?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Mechas%20e%20Colora%C3%A7%C3%A3o." target="_blank" rel="noopener" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.85rem;">
+                Agendar <i class="ri-whatsapp-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Item 2: Cabelo -->
+        <div class="service-card" data-category="cabelo">
+          <div class="service-img-wrapper">
+            <span class="service-category-tag">Cabelo</span>
+            <img src="assets/images/hero_studio.png" alt="Corte Feminino e Tratamento Capilar em Barueri" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Corte & Tratamento Profundo</h3>
+            <p class="service-desc">Corte personalizado para valorizar seu formato de rosto, acompanhado de reconstrução e nutrição intensa.</p>
+            <div class="service-footer">
+              <span class="service-price-consult">Consultar Valor</span>
+              <a href="https://wa.me/5511910618237?text=Ol%C3%A1!%20Quero%20agendar%20um%20Corte%20e%20Tratamento." target="_blank" rel="noopener" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.85rem;">
+                Agendar <i class="ri-whatsapp-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Item 3: Unha -->
+        <div class="service-card" data-category="unha">
+          <div class="service-img-wrapper">
+            <span class="service-category-tag">Unha</span>
+            <img src="assets/images/unha_service.png" alt="Alongamento de Unhas em Gel e Fibra de Vidro em Barueri" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Alongamento em Gel & Fibra</h3>
+            <p class="service-desc">Unhas resistentes, elegantes e com acabamento ultra natural. Diversas opções de formatos e Nail Art.</p>
+            <div class="service-footer">
+              <span class="service-price-consult">Consultar Valor</span>
+              <a href="https://wa.me/5511910618237?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20Alongamento%20em%20Gel." target="_blank" rel="noopener" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.85rem;">
+                Agendar <i class="ri-whatsapp-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Item 4: Unha -->
+        <div class="service-card" data-category="unha">
+          <div class="service-img-wrapper">
+            <span class="service-category-tag">Unha</span>
+            <img src="assets/images/unha_service.png" alt="Manicure e Esmaltação em Gel no Parque Imperial Barueri" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Esmaltação em Gel & Manicure</h3>
+            <p class="service-desc">Brilho intenso por até 20 dias sem descascar. Cuidado completo para mãos e pés com material esterilizado.</p>
+            <div class="service-footer">
+              <span class="service-price-consult">Consultar Valor</span>
+              <a href="https://wa.me/5511910618237?text=Ol%C3%A1!%20Quero%20agendar%20Manicure%20e%20Esmalta%C3%A7%C3%A3o%20em%20Gel." target="_blank" rel="noopener" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.85rem;">
+                Agendar <i class="ri-whatsapp-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Item 5: Sobrancelha -->
+        <div class="service-card" data-category="sobrancelha">
+          <div class="service-img-wrapper">
+            <span class="service-category-tag">Sobrancelha</span>
+            <img src="assets/images/sobrancelha_service.png" alt="Design de Sobrancelhas Personalizado e Henna em Barueri" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Design de Sobrancelhas & Henna</h3>
+            <p class="service-desc">Mapeamento facial para harmonia visual do seu olhar. Aplicação de Henna natural de longa duração.</p>
+            <div class="service-footer">
+              <span class="service-price-consult">Consultar Valor</span>
+              <a href="https://wa.me/5511910618237?text=Ol%C3%A1!%20Quero%20agendar%20Design%20de%20Sobrancelhas." target="_blank" rel="noopener" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.85rem;">
+                Agendar <i class="ri-whatsapp-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Item 6: Sobrancelha -->
+        <div class="service-card" data-category="sobrancelha">
+          <div class="service-img-wrapper">
+            <span class="service-category-tag">Sobrancelha</span>
+            <img src="assets/images/sobrancelha_service.png" alt="Brow Lamination e Lash Lift em Barueri" loading="lazy">
+          </div>
+          <div class="service-body">
+            <h3 class="service-title">Brow Lamination & Lash Lift</h3>
+            <p class="service-desc">Alinhamento dos fios da sobrancelha e cílios curvados naturally para um olhar marcante e moderno.</p>
+            <div class="service-footer">
+              <span class="service-price-consult">Consultar Valor</span>
+              <a href="https://wa.me/5511910618237?text=Ol%C3%A1!%20Quero%20agendar%20Brow%20Lamination." target="_blank" rel="noopener" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.85rem;">
+                Agendar <i class="ri-whatsapp-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section class="section-padding gallery-section" id="galeria">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">RESULTADOS DOS CLIENTES</span>
+        <h2 class="section-title">Galeria de Trabalhos em Barueri</h2>
+        <p class="section-desc">Fotos dos procedimentos de Cabelo, Unha e Sobrancelha realizados no Studio Di Catarina.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <a href="https://www.instagram.com/studiodicatarina/" target="_blank" rel="noopener" class="gallery-item">
+          <img src="assets/images/cabelo_service.png" alt="Resultado de Mechas Iluminadas em Barueri Studio Di Catarina" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h5>Mechas Iluminadas</h5>
+              <p>Ver no Instagram @studiodicatarina <i class="ri-external-link-line"></i></p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/studiodicatarina/" target="_blank" rel="noopener" class="gallery-item">
+          <img src="assets/images/unha_service.png" alt="Resultado de Alongamento de Unhas em Gel Barueri" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h5>Nail Art & Alongamento em Gel</h5>
+              <p>Ver no Instagram @studiodicatarina <i class="ri-external-link-line"></i></p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/studiodicatarina/" target="_blank" rel="noopener" class="gallery-item">
+          <img src="assets/images/sobrancelha_service.png" alt="Resultado de Design de Sobrancelhas Barueri" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h5>Design & Brow Lamination</h5>
+              <p>Ver no Instagram @studiodicatarina <i class="ri-external-link-line"></i></p>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://share.google/vSRypVfNlSi2TJZSQ" target="_blank" rel="noopener" class="gallery-item">
+          <img src="assets/images/hero_studio.png" alt="Foto do Salão Studio Di Catarina Parque Imperial Barueri" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <h5>Nosso Espaço em Barueri</h5>
+              <p>Ver no Google Maps <i class="ri-external-link-line"></i></p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION FOR GOOGLE RICH SNIPPETS -->
+  <section class="section-padding" id="faq" style="background: var(--clr-bg-secondary); border-top: 1px solid var(--clr-border-light);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">DÚVIDAS FREQUENTES</span>
+        <h2 class="section-title">Perguntas Frequentes (FAQ)</h2>
+        <p class="section-desc">Tire suas dúvidas sobre localização, agendamentos e procedimentos no Studio Di Catarina.</p>
+      </div>
+
+      <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px;">
+        <details style="background: var(--clr-bg-card); border: var(--glass-border); border-radius: var(--radius-md); padding: 18px 20px; cursor: pointer;">
+          <summary style="font-weight: 700; font-size: 1.05rem; color: var(--clr-cream-text); list-style: none; display: flex; justify-content: space-between; align-items: center;">
+            Onde fica localizado o Studio Di Catarina em Barueri? <i class="ri-arrow-down-s-line text-gold"></i>
+          </summary>
+          <p style="margin-top: 12px; color: var(--clr-muted-text); font-size: 0.92rem; line-height: 1.6;">
+            O Studio Di Catarina fica localizado na <strong>Rua Frei Henrique Soares de Coimbra, 251 - Parque Imperial, Barueri - SP, CEP 06462-190</strong>. Próximo a Alphaville e fácil acesso por Waze ou Uber.
+          </p>
+        </details>
+
+        <details style="background: var(--clr-bg-card); border: var(--glass-border); border-radius: var(--radius-md); padding: 18px 20px; cursor: pointer;">
+          <summary style="font-weight: 700; font-size: 1.05rem; color: var(--clr-cream-text); list-style: none; display: flex; justify-content: space-between; align-items: center;">
+            Quais os principais serviços oferecidos no salão? <i class="ri-arrow-down-s-line text-gold"></i>
+          </summary>
+          <p style="margin-top: 12px; color: var(--clr-muted-text); font-size: 0.92rem; line-height: 1.6;">
+            Oferecemos cuidados completos em 3 especialidades: <strong>Cabelos</strong> (Mechas, Morena Iluminada, Corte, Hidratação), <strong>Unhas</strong> (Alongamento em Gel, Fibra de Vidro, Esmaltação em Gel, Manicure) e <strong>Sobrancelhas</strong> (Design Personalizado, Henna, Brow Lamination, Lash Lift).
+          </p>
+        </details>
+
+        <details style="background: var(--clr-bg-card); border: var(--glass-border); border-radius: var(--radius-md); padding: 18px 20px; cursor: pointer;">
+          <summary style="font-weight: 700; font-size: 1.05rem; color: var(--clr-cream-text); list-style: none; display: flex; justify-content: space-between; align-items: center;">
+            Como faço para agendar um horário pelo WhatsApp? <i class="ri-arrow-down-s-line text-gold"></i>
+          </summary>
+          <p style="margin-top: 12px; color: var(--clr-muted-text); font-size: 0.92rem; line-height: 1.6;">
+            Basta clicar em qualquer botão <strong>"Agendar no WhatsApp"</strong> do site ou enviar uma mensagem direta para o número <strong>(11) 91061-8237</strong> com o serviço e dia de sua preferência.
+          </p>
+        </details>
+
+        <details style="background: var(--clr-bg-card); border: var(--glass-border); border-radius: var(--radius-md); padding: 18px 20px; cursor: pointer;">
+          <summary style="font-weight: 700; font-size: 1.05rem; color: var(--clr-cream-text); list-style: none; display: flex; justify-content: space-between; align-items: center;">
+            Como chegar ao Studio Di Catarina de Uber, Waze ou Google Maps? <i class="ri-arrow-down-s-line text-gold"></i>
+          </summary>
+          <p style="margin-top: 12px; color: var(--clr-muted-text); font-size: 0.92rem; line-height: 1.6;">
+            No nosso site oficial disponibilizamos botões diretos para abrir a rota no Waze, solicitar corrida no Uber, 99 ou abrir no Google Maps com o endereço pré-selecionado.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION & MAP SECTION (WITH PRECISE DEEP LINKS FOR GOOGLE MAPS, WAZE, UBER & 99) -->
+  <section class="section-padding location-section" id="localizacao">
+    <div class="container">
+      <div class="location-wrapper">
+        <div class="location-content">
+          <span class="section-subtitle">LOCALIZAÇÃO & TRANSPORTE EM BARUERI</span>
+          <h2 class="location-title">Venha nos Visitar no Parque Imperial</h2>
+
+          <ul class="location-detail-list">
+            <li class="location-detail-item">
+              <div class="location-detail-icon">
+                <i class="ri-map-pin-line"></i>
+              </div>
+              <div class="location-detail-text">
+                <h5>Endereço Completo</h5>
+                <p>
+                  <a href="https://share.google/vSRypVfNlSi2TJZSQ" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">
+                    R. Frei Henrique Soares de Coimbra, 251 - Parque Imperial, Barueri - SP, 06462-190
+                  </a>
+                </p>
+              </div>
+            </li>
+
+            <li class="location-detail-item">
+              <div class="location-detail-icon">
+                <i class="ri-whatsapp-line"></i>
+              </div>
+              <div class="location-detail-text">
+                <h5>Telefone & WhatsApp</h5>
+                <p>
+                  <a href="https://wa.me/5511910618237" target="_blank" rel="noopener" style="color: var(--clr-whatsapp); font-weight: 600;">
+                    (11) 91061-8237
+                  </a>
+                </p>
+              </div>
+            </li>
+
+            <li class="location-detail-item">
+              <div class="location-detail-icon">
+                <i class="ri-time-line"></i>
+              </div>
+              <div class="location-detail-text">
+                <h5>Horário de Funcionamento</h5>
+                <p>Terça a Sábado: 09h às 19h (Com agendamento)</p>
+              </div>
+            </li>
+
+            <li class="location-detail-item">
+              <div class="location-detail-icon">
+                <i class="ri-instagram-line"></i>
+              </div>
+              <div class="location-detail-text">
+                <h5>Redes Sociais Oficiais</h5>
+                <p>
+                  <a href="https://www.instagram.com/studiodicatarina/" target="_blank" rel="noopener" style="color: var(--clr-gold-primary);">Instagram @studiodicatarina</a> | 
+                  <a href="https://www.facebook.com/studiodicatarina/" target="_blank" rel="noopener" style="color: var(--clr-gold-primary);">Facebook</a>
+                </p>
+              </div>
+            </li>
+          </ul>
+
+          <h5 style="font-size: 0.95rem; font-weight: 700; color: var(--clr-gold-light); margin-top: 10px; margin-bottom: 8px;">
+            <i class="ri-navigation-fill text-gold"></i> Abrir Rota ou Pedir Transporte Direto:
+          </h5>
+
+          <!-- BOTOES DE NAVEGACAO E TRANSPORTE COM DEEP LINKS DE ALTA PRECISÃO -->
+          <div class="nav-apps-grid">
+            <!-- GOOGLE MAPS -->
+            <a href="https://share.google/vSRypVfNlSi2TJZSQ" target="_blank" rel="noopener" class="btn btn-primary" style="padding: 12px 16px; font-size: 0.88rem;" title="Abrir localização no Google Maps">
+              <i class="ri-google-fill"></i> Google Maps
+            </a>
+
+            <!-- WAZE GPS -->
+            <a href="https://waze.com/ul?q=Rua%20Frei%20Henrique%20Soares%20de%20Coimbra%20251%20Barueri&ll=-23.5041,-46.8048&navigate=yes" target="_blank" rel="noopener" class="btn btn-waze" style="padding: 12px 16px; font-size: 0.88rem;" title="Navegar via Waze GPS">
+              <i class="ri-navigation-line"></i> Abrir no Waze
+            </a>
+
+            <!-- UBER DEEP LINK -->
+            <a href="https://m.uber.com/ul/?action=setPickup&dropoff[latitude]=-23.5041&dropoff[longitude]=-46.8048&dropoff[nickname]=Studio%20Di%20Catarina&dropoff[formattedAddress]=Rua%20Frei%20Henrique%20Soares%20de%20Coimbra%2C%20251%20-%20Parque%20Imperial%2C%20Barueri%20-%20SP" target="_blank" rel="noopener" class="btn btn-uber" style="padding: 12px 16px; font-size: 0.88rem;" title="Pedir viagem no Uber para o Studio Di Catarina">
+              <i class="ri-car-fill"></i> Pedir no Uber
+            </a>
+
+            <!-- 99 APP LINK -->
+            <a href="https://d.99app.com/" target="_blank" rel="noopener" class="btn btn-99" style="padding: 12px 16px; font-size: 0.88rem;" title="Pedir viagem no 99 Pop">
+              <i class="ri-taxi-fill"></i> Pedir no 99
+            </a>
+          </div>
+
+          <div style="margin-top: 16px;">
+            <a href="https://wa.me/5511910618237?text=Ol%C3%A1!%20Quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" class="btn btn-whatsapp" style="width: 100%;">
+              <i class="ri-whatsapp-line"></i> Agendar pelo WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.553932789714!2d-46.8048!3d-23.5041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf02517b6a4a11%3A0x0!2sR.%20Frei%20Henrique%20Soares%20de%20Coimbra%2C%20251%20-%20Parque%20Imperial%2C%20Barueri%20-%20SP%2C%2006462-190!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localização do Studio Di Catarina no Parque Imperial Barueri SP">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/5511910618237?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Studio%20Di%20Catarina." 
+     target="_blank" 
+     rel="noopener" 
+     class="floating-whatsapp" 
+     aria-label="Agendar via WhatsApp">
+    <i class="ri-whatsapp-line"></i>
+  </a>
+
+  <!-- MOBILE BOTTOM APP NAVIGATION BAR (PWA FEATURE) -->
+  <nav class="bottom-nav" aria-label="Navegação do Aplicativo Mobile">
+    <a href="#home" class="bottom-nav-item active">
+      <i class="ri-home-5-line"></i>
+      <span>Início</span>
+    </a>
+    <a href="#servicos" class="bottom-nav-item">
+      <i class="ri-scissors-2-line"></i>
+      <span>Serviços</span>
+    </a>
+    <a href="#localizacao" class="bottom-nav-item">
+      <i class="ri-map-pin-2-line"></i>
+      <span>Mapa</span>
+    </a>
+    <a href="https://wa.me/5511910618237?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" class="bottom-nav-item whatsapp-tab">
+      <i class="ri-whatsapp-line"></i>
+      <span>Agendar</span>
+    </a>
+  </nav>
+
+  <!-- WEBAPP BOTTOM SHEET MODAL DE AGENDAMENTO -->
+  <div class="bottom-sheet-backdrop" id="bottomSheetBackdrop"></div>
+  <div class="bottom-sheet" id="bottomSheet">
+    <div class="bottom-sheet-handle"></div>
+    <div class="bottom-sheet-header">
+      <h3 class="bottom-sheet-title">Agendamento Rápido</h3>
+      <button class="bottom-sheet-close" id="closeBottomSheet" aria-label="Fechar"><i class="ri-close-line"></i></button>
+    </div>
+    
+    <p style="font-size: 0.88rem; color: var(--clr-muted-text); margin-bottom: 16px;">
+      Escolha o serviço desejado para iniciar a confirmação no WhatsApp:
+    </p>
+
+    <div class="service-select-grid">
+      <div class="service-select-card active" data-service-name="Mechas & Cabelos em Barueri">
+        <i class="ri-scissors-2-line"></i>
+        <span>Cabelos</span>
+      </div>
+      <div class="service-select-card" data-service-name="Alongamento em Gel / Manicure em Barueri">
+        <i class="ri-hand-heart-line"></i>
+        <span>Unhas</span>
+      </div>
+      <div class="service-select-card" data-service-name="Design de Sobrancelhas / Henna em Barueri">
+        <i class="ri-eye-line"></i>
+        <span>Sobrancelhas</span>
+      </div>
+    </div>
+
+    <button class="btn btn-whatsapp" id="confirmBookingBtn" style="width: 100%;">
+      <i class="ri-whatsapp-line"></i> Confirmar no WhatsApp
+    </button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <img src="assets/images/logo.png" alt="Logotipo Studio Di Catarina Barueri" class="logo-img" width="44" height="44">
+            <div class="logo-text-wrapper">
+              <span class="logo-main text-gold">STUDIO DI CATARINA</span>
+              <span class="logo-sub">BARUERI • SP</span>
+            </div>
+          </a>
+          <p>Seu espaço exclusivo de beleza e autoimagem no Parque Imperial, Barueri - SP.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/studiodicatarina/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram Studio Di Catarina">
+              <i class="ri-instagram-line"></i>
+            </a>
+            <a href="https://www.facebook.com/studiodicatarina/" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook Studio Di Catarina">
+              <i class="ri-facebook-fill"></i>
+            </a>
+            <a href="https://wa.me/5511910618237" target="_blank" rel="noopener" class="social-btn" aria-label="WhatsApp Studio Di Catarina">
+              <i class="ri-whatsapp-line"></i>
+            </a>
+            <a href="https://share.google/vSRypVfNlSi2TJZSQ" target="_blank" rel="noopener" class="social-btn" aria-label="Google Maps Studio Di Catarina">
+              <i class="ri-map-pin-2-fill"></i>
+            </a>
+            <a href="https://waze.com/ul?q=Rua+Frei+Henrique+Soares+de+Coimbra+251+Barueri" target="_blank" rel="noopener" class="social-btn" aria-label="Waze Studio Di Catarina">
+              <i class="ri-navigation-line"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Serviços</h4>
+          <ul class="footer-links">
+            <li><a href="#servicos">Cabelos & Mechas</a></li>
+            <li><a href="#servicos">Alongamento em Gel</a></li>
+            <li><a href="#servicos">Design de Sobrancelhas</a></li>
+            <li><a href="#servicos">Brow Lamination</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Como Chegar</h4>
+          <ul class="footer-links">
+            <li><a href="https://share.google/vSRypVfNlSi2TJZSQ" target="_blank" rel="noopener">Google Maps</a></li>
+            <li><a href="https://waze.com/ul?q=Rua+Frei+Henrique+Soares+de+Coimbra+251+Barueri&navigate=yes" target="_blank" rel="noopener">Waze GPS</a></li>
+            <li><a href="https://m.uber.com/ul/?action=setPickup&dropoff[latitude]=-23.5041&dropoff[longitude]=-46.8048&dropoff[nickname]=Studio%20Di%20Catarina" target="_blank" rel="noopener">Uber App</a></li>
+            <li><a href="https://d.99app.com/" target="_blank" rel="noopener">99 Pop</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contato & Endereço</h4>
+          <p style="font-size: 0.875rem; color: var(--clr-muted-text); margin-bottom: 8px;">
+            <a href="https://share.google/vSRypVfNlSi2TJZSQ" target="_blank" rel="noopener" style="color: inherit;">
+              R. Frei Henrique Soares de Coimbra, 251<br>Parque Imperial, Barueri - SP<br>CEP: 06462-190
+            </a>
+          </p>
+          <p style="font-size: 0.9rem; color: var(--clr-gold-primary); margin-bottom: 16px; font-weight: 600;">
+            <a href="tel:+5511910618237" style="color: inherit;"><i class="ri-phone-line"></i> (11) 91061-8237</a>
+          </p>
+          <a href="https://wa.me/5511910618237?text=Ol%C3%A1!%20Vim%20pelo%20site." target="_blank" rel="noopener" class="btn btn-whatsapp" style="width: 100%; font-size: 0.85rem;">
+            <i class="ri-whatsapp-line"></i> Falar no WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Studio Di Catarina. Salão de Beleza em Barueri - SP.</p>
+        <p>Otimizado para motores de busca (Google, Bing) & PWA WebApp.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- NOSCRIPT FALLBACK PARA CRAWLERS E ACESSIBILIDADE -->
+  <noscript>
+    <div style="background: #C47B75; color: #FFF; text-align: center; padding: 16px; font-family: sans-serif;">
+      <strong>Studio Di Catarina</strong> — Salão de Beleza em Barueri, SP. Agende pelo WhatsApp: <a href="https://wa.me/5511910618237" style="color: #FFF; font-weight: bold;">(11) 91061-8237</a>. Endereço: R. Frei Henrique Soares de Coimbra, 251 - Parque Imperial, Barueri - SP, 06462-190.
+    </div>
+  </noscript>
+
+  <!-- Javascript -->
+  <script src="script.js"></script>
+</body>
+</html>

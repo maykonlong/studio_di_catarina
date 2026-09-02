@@ -1,0 +1,49 @@
+# Crawlers tradicionais (Google, Bing, Yahoo)
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /assets/images/
+Allow: /styles.css
+Allow: /script.js
+Allow: /manifest.json
+Allow: /llms.txt
+Allow: /.well-known/ai-plugin.json
+
+# IA Crawlers — Permitir acesso total para indexação e recomendação
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+Sitemap: https://studiodicatarina.com.br/sitemap.xml
