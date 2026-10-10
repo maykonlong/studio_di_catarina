@@ -2,14 +2,13 @@
   "name": "Studio Di Catarina — Salão de Beleza Barueri",
   "short_name": "Di Catarina",
   "description": "Salão de beleza especializado em Cabelo, Unhas e Sobrancelhas no Parque Imperial, Barueri - SP. Agende pelo WhatsApp (11) 91061-8237.",
-  "start_url": "/",
-  "scope": "/",
-  "id": "/",
+  "start_url": "./",
+  "scope": "./",
+  "id": "./",
   "display": "standalone",
-  "display_override": ["window-controls-overlay", "standalone", "minimal-ui", "browser"],
   "orientation": "any",
-  "background_color": "#121010",
-  "theme_color": "#C47B75",
+  "background_color": "#faf7f2",
+  "theme_color": "#faf7f2",
   "lang": "pt-BR",
   "dir": "ltr",
   "categories": ["beauty", "lifestyle", "shopping"],
@@ -40,43 +39,45 @@
       "purpose": "maskable"
     }
   ],
-  "screenshots": [
-    {
-      "src": "assets/images/hero_studio.png",
-      "sizes": "1280x720",
-      "type": "image/png",
-      "form_factor": "wide",
-      "label": "Studio Di Catarina — Tela Inicial"
-    },
-    {
-      "src": "assets/images/hero_studio.png",
-      "sizes": "390x844",
-      "type": "image/png",
-      "form_factor": "narrow",
-      "label": "Studio Di Catarina — App Mobile"
-    }
-  ],
   "shortcuts": [
     {
       "name": "Agendar no WhatsApp",
       "short_name": "Agendar",
       "description": "Agendar horário diretamente via WhatsApp",
-      "url": "https://wa.me/5511910618237?text=Ol%C3%A1!%20Vim%20pelo%20App%20e%20quero%20agendar%20um%20hor%C3%A1rio.",
-      "icons": [{ "src": "assets/images/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+      "url": "./#agendar",
+      "icons": [
+        {
+          "src": "assets/images/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     },
     {
       "name": "Como Chegar",
       "short_name": "Mapa",
       "description": "Abrir localização no Google Maps",
-      "url": "/#localizacao",
-      "icons": [{ "src": "assets/images/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+      "url": "./#localizacao",
+      "icons": [
+        {
+          "src": "assets/images/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     },
     {
       "name": "Nossos Serviços",
       "short_name": "Serviços",
       "description": "Ver catálogo de serviços",
-      "url": "/#servicos",
-      "icons": [{ "src": "assets/images/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+      "url": "./#servicos",
+      "icons": [
+        {
+          "src": "assets/images/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     }
   ],
   "related_applications": [],

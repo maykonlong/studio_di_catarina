@@ -1,0 +1,37 @@
+{
+  "cabelo-iluminado": {
+    "file": "assets/images/real/cabelo-iluminado.webp",
+    "source": "https://www.instagram.com/p/DI2fazaRByM/",
+    "width": 960,
+    "height": 1200,
+    "retrieved_on": "2026-10-10"
+  },
+  "corte-movimento": {
+    "file": "assets/images/real/corte-movimento.webp",
+    "source": "https://www.instagram.com/p/DI2eiXRRdnv/",
+    "width": 512,
+    "height": 640,
+    "retrieved_on": "2026-10-10"
+  },
+  "cachos": {
+    "file": "assets/images/real/cachos.webp",
+    "source": "https://www.instagram.com/p/CkBg963uy2v/",
+    "width": 512,
+    "height": 640,
+    "retrieved_on": "2026-10-10"
+  },
+  "fachada-2023": {
+    "file": "assets/images/real/fachada-2023.webp",
+    "source": "https://www.instagram.com/p/CyROC-4xi4P/",
+    "width": 974,
+    "height": 974,
+    "retrieved_on": "2026-10-10"
+  },
+  "sobrancelhas": {
+    "file": "assets/images/real/sobrancelhas.webp",
+    "source": "https://www.facebook.com/photo/?fbid=1570281414597515",
+    "width": 750,
+    "height": 1000,
+    "retrieved_on": "2026-10-10"
+  }
+}

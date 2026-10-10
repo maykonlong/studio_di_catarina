@@ -17,3 +17,5 @@ desktop.ini
 # Node (caso instale dependências no futuro)
 node_modules/
 npm-debug.log*
+# Pré-visualizações locais
+preview/

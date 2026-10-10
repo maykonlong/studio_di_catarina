@@ -1,152 +1,45 @@
-# 🌸 Studio Di Catarina — WebApp Oficial
+# Studio Di Catarina
 
-> **Salão de Beleza especializado em Cabelo, Unhas e Sobrancelhas**  
-> Parque Imperial, Barueri - SP · WhatsApp: [(11) 91061-8237](https://wa.me/5511910618237)
+Site institucional responsivo para o salão de beleza no Parque Imperial, Barueri. HTML, CSS e JavaScript, sem dependências de execução ou etapa de build.
 
-[![PWA](https://img.shields.io/badge/PWA-Enabled-purple?logo=googlechrome)](https://studiodicatarina.com.br)
-[![SEO](https://img.shields.io/badge/SEO-Otimizado-green?logo=google)](https://studiodicatarina.com.br)
-[![Schema.org](https://img.shields.io/badge/Schema.org-BeautySalon-orange)](https://studiodicatarina.com.br)
-[![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
+## Executar
 
----
+Com Node.js 18 ou superior:
 
-## 📋 Sobre o Projeto
-
-Site institucional e **WebApp PWA** do Studio Di Catarina, desenvolvido com foco em:
-
-- 📱 **Mobile-First** — design responsivo para todos os dispositivos
-- ⚡ **Performance** — Core Web Vitals otimizados (LCP, FID, CLS)
-- 🔍 **Super SEO Local** — Schema.org, FAQPage, BreadcrumbList, AggregateRating
-- 🤖 **GEO** — Otimizado para IAs (ChatGPT, Gemini, Perplexity) com `llms.txt`
-- 📦 **PWA/WebApp** — Instalável na tela inicial, funciona offline
-- 🗺️ **Navegação** — Botões diretos para Google Maps, Waze, Uber e 99
-
----
-
-## 🛠️ Tecnologias
-
-| Tecnologia | Uso |
-|-----------|-----|
-| HTML5 semântico | Estrutura + SEO |
-| CSS3 + Variáveis | Design System com identidade da marca |
-| JavaScript Vanilla | Interatividade + PWA Engine |
-| Service Worker | Cache offline + instalação |
-| Web App Manifest | Instalação na tela inicial |
-| Schema.org JSON-LD | SEO estruturado |
-| Node.js | Servidor HTTPS local para desenvolvimento |
-
----
-
-## 🚀 Rodando Localmente
-
-### Pré-requisitos
-- [Node.js](https://nodejs.org) v18+ instalado
-- OpenSSL (já incluído no Node.js no Windows)
-
-### Iniciar o servidor HTTPS (necessário para PWA)
-
-```bash
-# Clonar o repositório
-git clone https://github.com/maykonlong/studio_di_catarina.git
-cd studio_di_catarina
-
-# Iniciar servidor HTTPS
-node server.js
+```sh
+npm start
 ```
 
-Ou simplesmente executar o **`iniciar.bat`** no Windows.
+Abra http://127.0.0.1:3000. Também é possível usar `node server.js` ou `iniciar.bat`. O servidor fica restrito ao computador local por padrão; `PORT` e `HOST` permitem configurar o endereço. O modo offline funciona em localhost, sem instalar certificados. Em produção, use HTTPS.
 
-O servidor abrirá em:
-- 🔒 **HTTPS (PWA)**: `https://localhost:3001`
-- 🔄 **HTTP (redirect)**: `http://localhost:3000`
-
-> ⚠️ Na primeira vez, aceite o certificado autoassinado: clique **"Avançado" → "Continuar para localhost"**
-
----
-
-## 📁 Estrutura do Projeto
-
-```
-studio_di_catarina/
-├── index.html              # Página principal (PWA + SEO completo)
-├── styles.css              # Design System + layout responsivo
-├── script.js               # Lógica, PWA install, Bottom Sheet
-├── sw.js                   # Service Worker (cache offline)
-├── manifest.json           # Web App Manifest (instalação PWA)
-├── server.js               # Servidor HTTPS local para dev
-├── sitemap.xml             # Sitemap para Google/Bing
-├── robots.txt              # Permissões para crawlers + bots de IA
-├── llms.txt                # Otimização para IAs (GEO)
-├── iniciar.bat             # Launcher Windows
-├── iniciar.sh              # Launcher Linux/Mac
-├── .well-known/
-│   └── ai-plugin.json      # Metadata para assistentes de IA
-└── assets/
-    └── images/
-        ├── logo.png
-        ├── hero_studio.png
-        ├── cabelo_service.png
-        ├── unha_service.png
-        ├── sobrancelha_service.png
-        ├── icon-192.png
-        └── icon-512.png
+```sh
+npm run check
 ```
 
----
+## Experiência
 
-## 📱 Funcionalidades PWA
+- Layout editorial em creme, cobre e marrom, com versões para celular e desktop.
+- Serviços organizados por cabelo, unhas e sobrancelhas/cílios, com filtros.
+- Agendamento acessível em diálogo nativo, com escolha de procedimento e mensagem personalizada no WhatsApp. A equipe confirma valores e disponibilidade; o site não efetua reservas automaticamente.
+- Instagram, Google Maps, Waze, endereço, horários e perguntas frequentes.
+- PWA com cache offline e instalação quando suportada pelo navegador.
+- Imagens WebP locais, carregamento tardio e ícones SVG sem bibliotecas externas.
+- Navegação por teclado, links de contato sem JavaScript e suporte a movimento reduzido.
 
-- ✅ Instalável na tela inicial (Android, iOS, Windows, Mac)
-- ✅ Funciona offline com página de fallback elegante
-- ✅ Bottom Navigation Bar nativa para mobile
-- ✅ Bottom Sheet de agendamento rápido
-- ✅ Banner de instalação do app
-- ✅ Shortcuts de tela inicial (Agendar, Mapa, Serviços)
-- ✅ Suporte a iOS Safari (apple-mobile-web-app-capable)
+## Conteúdo e publicação
 
----
+Os contatos, serviços, endereço e horários foram preservados do repositório original. Fotos reais das publicações públicas do Instagram e Facebook foram integradas à capa, aos serviços de cabelo e sobrancelhas e à galeria. Cada foto leva à publicação original; as fontes estão em `assets/images/real/sources.json`. A foto de fachada é identificada como registro de outubro de 2023. Somente a imagem de unhas permanece ilustrativa. Endereço e WhatsApp do repositório foram confirmados pelo usuário, apesar das informações diferentes no Facebook. Não são exibidos depoimentos, preços ou avaliações sem comprovação.
 
-## 🔍 SEO & GEO
+O domínio canônico e as URLs sociais preservam `https://studiodicatarina.com.br/`; ajuste-os se o domínio de publicação for outro. Google Fonts e o mapa dependem de conexão, com fontes de sistema e links de rota como alternativas.
 
-### SEO Técnico
-- Schema.org: `BeautySalon`, `FAQPage`, `BreadcrumbList`, `OfferCatalog`, `AggregateRating`
-- Meta tags completas: Open Graph, Twitter Cards, Geo, robots
-- `sitemap.xml` com imagens | `robots.txt` completo
-- Preconnect, Preload (LCP otimizado)
+Publique os arquivos estáticos em um host HTTPS. O `server.js` é apenas para desenvolvimento local. Ao alterar recursos offline, atualize a versão em `sw.js`.
 
-### GEO — Para IAs Recomendarem
-- `llms.txt` — Contexto estruturado para ChatGPT, Gemini, Perplexity
-- `.well-known/ai-plugin.json` — Descoberta automática por LLMs
-- `robots.txt` com permissão explícita para GPTBot, ClaudeBot, PerplexityBot, Google-Extended
+## Arquivos principais
 
----
+- `index.html`: conteúdo, SEO e diálogo de agendamento.
+- `styles.css`: identidade visual e responsividade.
+- `script.js`: menu, filtros, agendamento e instalação.
+- `sw.js` / `manifest.json`: PWA.
+- `assets/images/`: identidade original e imagens otimizadas.
 
-## 🗺️ Navegação e Transporte
-
-Botões diretos para levar clientes ao salão:
-
-| App | Deep Link |
-|-----|-----------|
-| Google Maps | Link oficial do negócio |
-| Waze | GPS com coordenadas `-23.5041, -46.8048` |
-| Uber | Deep link com destino pré-definido |
-| 99 Pop | Link direto para o app |
-
----
-
-## 📍 Informações do Studio
-
-| | |
-|-|-|
-| **Endereço** | R. Frei Henrique Soares de Coimbra, 251 - Parque Imperial, Barueri - SP, 06462-190 |
-| **WhatsApp** | [(11) 91061-8237](https://wa.me/5511910618237) |
-| **Instagram** | [@studiodicatarina](https://www.instagram.com/studiodicatarina/) |
-| **Facebook** | [Studio Di Catarina](https://www.facebook.com/studiodicatarina/) |
-| **Horário** | Terça a Sábado, 09h às 19h |
-
----
-
-## 📄 Licença
-
-Este projeto foi desenvolvido exclusivamente para o **Studio Di Catarina**.  
-© 2026 Studio Di Catarina — Todos os direitos reservados.
+© Studio Di Catarina. Todos os direitos reservados.

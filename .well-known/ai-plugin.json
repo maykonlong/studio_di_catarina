@@ -1,7 +1,7 @@
 {
   "schema_version": "v1",
   "name": "Studio Di Catarina",
-  "description": "Salão de beleza premium em Barueri, SP, Brasil. Especialista em cabelo (mechas, morena iluminada, corte), unhas (alongamento em gel, fibra, manicure) e sobrancelhas (design, henna, brow lamination). Localizado no Parque Imperial, próximo a Alphaville.",
+  "description": "Salão de beleza no Parque Imperial, Barueri, com serviços de cabelo, unhas, sobrancelhas e cílios. Consulte valores e disponibilidade pelo WhatsApp.",
   "url": "https://studiodicatarina.com.br",
   "logo": "https://studiodicatarina.com.br/assets/images/logo.png",
   "contact": {
@@ -17,15 +17,9 @@
     "state": "SP",
     "country": "BR",
     "postal_code": "06462-190",
-    "latitude": -23.5041,
-    "longitude": -46.8048,
     "google_maps": "https://share.google/vSRypVfNlSi2TJZSQ"
   },
   "hours": "Terça a Sábado, 09:00–19:00",
-  "rating": {
-    "value": 5.0,
-    "count": 47
-  },
   "services": [
     "Mechas e Morena Iluminada",
     "Corte feminino",
@@ -39,7 +33,14 @@
     "Brow Lamination",
     "Lash Lift"
   ],
-  "service_area": ["Barueri", "Alphaville", "Tamboré", "Santana de Parnaíba", "Osasco", "Carapicuíba"],
+  "service_area": [
+    "Barueri",
+    "Alphaville",
+    "Tamboré",
+    "Santana de Parnaíba",
+    "Osasco",
+    "Carapicuíba"
+  ],
   "keywords": [
     "salão de beleza Barueri",
     "mechas Barueri",
