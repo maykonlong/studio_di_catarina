@@ -9,7 +9,7 @@ Salão de beleza no Parque Imperial, Barueri, SP.
 - Instagram: https://www.instagram.com/studiodicatarina/
 - Facebook: https://www.facebook.com/studiodicatarina/
 - Horário: terça a sábado, das 9h às 19h, mediante agendamento.
-- Site: https://studiodicatarina.com.br/
+- Site: https://maykonlong.github.io/studio_di_catarina/
 
 ## Serviços
 
@@ -23,6 +23,6 @@ Valores, avaliação e disponibilidade devem ser consultados diretamente com a e
 
 ## Imagens
 
-Fotos reais do Instagram e Facebook do Studio aparecem no site, com links para as publicações originais. A foto de fachada é um registro de outubro de 2023. Somente a imagem de unhas é ilustrativa. Endereço de Parque Imperial e WhatsApp +55 11 91061-8237 confirmados pelo responsável pelo site.
+Fotos reais do Instagram e Facebook do Studio aparecem no site, com links para as publicações originais. Somente a imagem de unhas é ilustrativa. Endereço de Parque Imperial e WhatsApp +55 11 91061-8237 confirmados pelo responsável pelo site.
 
 Informações de contato e serviços preservadas do repositório original. Não há preços ou avaliações de clientes verificados neste arquivo.

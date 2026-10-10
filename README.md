@@ -28,9 +28,9 @@ npm run check
 
 ## Conteúdo e publicação
 
-Os contatos, serviços, endereço e horários foram preservados do repositório original. Fotos reais das publicações públicas do Instagram e Facebook foram integradas à capa, aos serviços de cabelo e sobrancelhas e à galeria. Cada foto leva à publicação original; as fontes estão em `assets/images/real/sources.json`. A foto de fachada é identificada como registro de outubro de 2023. Somente a imagem de unhas permanece ilustrativa. Endereço e WhatsApp do repositório foram confirmados pelo usuário, apesar das informações diferentes no Facebook. Não são exibidos depoimentos, preços ou avaliações sem comprovação.
+Os contatos, serviços, endereço e horários foram preservados do repositório original. Fotos reais das publicações públicas do Instagram e Facebook foram integradas à capa, aos serviços de cabelo e sobrancelhas e à galeria. A galeria aparece após a capa e permite iniciar uma conversa com a publicação escolhida como referência. O botão de agendamento permanece visível no celular. Cada foto leva à publicação original; as fontes estão em `assets/images/real/sources.json`. Somente a imagem de unhas permanece ilustrativa. Endereço e WhatsApp do repositório foram confirmados pelo usuário, apesar das informações diferentes no Facebook. Não são exibidos depoimentos, preços ou avaliações sem comprovação.
 
-O domínio canônico e as URLs sociais preservam `https://studiodicatarina.com.br/`; ajuste-os se o domínio de publicação for outro. Google Fonts e o mapa dependem de conexão, com fontes de sistema e links de rota como alternativas.
+O endereço canônico, os metadados sociais e o sitemap usam a publicação em `https://maykonlong.github.io/studio_di_catarina/`. Google Fonts e o mapa dependem de conexão, com fontes de sistema e links de rota como alternativas.
 
 Publique os arquivos estáticos em um host HTTPS. O `server.js` é apenas para desenvolvimento local. Ao alterar CSS ou JavaScript, atualize o parâmetro `v` dos respectivos links em `index.html` e na lista `ASSETS` de `sw.js`, além da versão do cache. Os parâmetros devem coincidir nos dois arquivos. Isso evita misturar HTML novo com recursos antigos mesmo quando o service worker original ainda controla a primeira navegação após a publicação.
 

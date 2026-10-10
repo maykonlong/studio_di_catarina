@@ -1,17 +1,16 @@
-const VERSION = "di-catarina-v6";
+const VERSION = "di-catarina-v7";
 const BASE = new URL("./", self.location.href);
 const ASSETS = [
   "./",
   "index.html",
   // Versioned URLs bypass the original cache-first worker on the first visit
   // after an update, before this worker has installed and claimed the page.
-  "styles.css?v=20261010-2",
-  "script.js?v=20261010-2",
+  "styles.css?v=20261010-3",
+  "script.js?v=20261010-3",
   "manifest.json",
   "assets/images/real/cabelo-iluminado.webp",
   "assets/images/real/corte-movimento.webp",
   "assets/images/real/cachos.webp",
-  "assets/images/real/fachada-2023.webp",
   "assets/images/real/sobrancelhas.webp",
   "assets/images/unha_service.webp",
   "assets/images/icon-192.png",

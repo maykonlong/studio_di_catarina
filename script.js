@@ -51,10 +51,13 @@ const bookingForm = document.querySelector("#booking-form");
 const serviceSelect = document.querySelector("#booking-service");
 const nameInput = document.querySelector("#booking-name");
 const continueLink = document.querySelector("#booking-continue");
+const referenceNote = document.querySelector("#booking-reference");
+let bookingReference = "";
 function updateBookingLink() {
   const name = nameInput.value.trim();
   const greeting = name ? `Olá! Meu nome é ${name}.` : "Olá!";
-  const message = `${greeting} Vim pelo site do Studio Di Catarina e gostaria de consultar valores e horários. Serviço: ${serviceSelect.value}.`;
+  const message = `${greeting} Vim pelo site do Studio Di Catarina e gostaria de consultar valores e horários. Serviço: ${serviceSelect.value}.${bookingReference ? ` Referência do visual: ${bookingReference}` : ""}`;
+  referenceNote.hidden = !bookingReference;
   continueLink.href = `https://wa.me/5511910618237?text=${encodeURIComponent(message)}`;
 }
 document.querySelectorAll("[data-booking]").forEach((link) =>
@@ -71,6 +74,7 @@ document.querySelectorAll("[data-booking]").forEach((link) =>
     closeMenu();
     serviceSelect.value =
       link.dataset.service || "Quero ajuda para escolher meu cuidado";
+    bookingReference = link.dataset.reference || "";
     updateBookingLink();
     dialog.showModal();
     document.body.classList.add("dialog-open");
@@ -99,6 +103,10 @@ dialog.addEventListener("click", (event) => {
     dialog.close();
 });
 bookingForm.addEventListener("input", updateBookingLink);
+serviceSelect.addEventListener("change", () => {
+  bookingReference = "";
+  updateBookingLink();
+});
 bookingForm.addEventListener("change", updateBookingLink);
 bookingForm.addEventListener("submit", (event) => {
   event.preventDefault();
