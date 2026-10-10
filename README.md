@@ -32,7 +32,7 @@ Os contatos, serviços, endereço e horários foram preservados do repositório 
 
 O domínio canônico e as URLs sociais preservam `https://studiodicatarina.com.br/`; ajuste-os se o domínio de publicação for outro. Google Fonts e o mapa dependem de conexão, com fontes de sistema e links de rota como alternativas.
 
-Publique os arquivos estáticos em um host HTTPS. O `server.js` é apenas para desenvolvimento local. Ao alterar recursos offline, atualize a versão em `sw.js`.
+Publique os arquivos estáticos em um host HTTPS. O `server.js` é apenas para desenvolvimento local. Ao alterar CSS ou JavaScript, atualize o parâmetro `v` dos respectivos links em `index.html` e na lista `ASSETS` de `sw.js`, além da versão do cache. Os parâmetros devem coincidir nos dois arquivos. Isso evita misturar HTML novo com recursos antigos mesmo quando o service worker original ainda controla a primeira navegação após a publicação.
 
 ## Arquivos principais
 

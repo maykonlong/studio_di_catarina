@@ -149,7 +149,7 @@ window.addEventListener("appinstalled", () => {
 if ("serviceWorker" in navigator && window.isSecureContext)
   window.addEventListener("load", () => {
     navigator.serviceWorker
-      .register("./sw.js")
+      .register("./sw.js", { updateViaCache: "none" })
       .catch((error) =>
         console.warn("Não foi possível ativar o modo offline.", error),
       );

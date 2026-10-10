@@ -1,10 +1,12 @@
-const VERSION = "di-catarina-v5";
+const VERSION = "di-catarina-v6";
 const BASE = new URL("./", self.location.href);
 const ASSETS = [
   "./",
   "index.html",
-  "styles.css",
-  "script.js",
+  // Versioned URLs bypass the original cache-first worker on the first visit
+  // after an update, before this worker has installed and claimed the page.
+  "styles.css?v=20261010-2",
+  "script.js?v=20261010-2",
   "manifest.json",
   "assets/images/real/cabelo-iluminado.webp",
   "assets/images/real/corte-movimento.webp",
