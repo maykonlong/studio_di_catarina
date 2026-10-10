@@ -216,8 +216,24 @@ footer { padding-block: 36px 28px; }
 .footer-bottom > span:last-of-type { display: flex; gap: 15px; align-items: center; }
 .footer-bottom > span:last-of-type > span { color: var(--copper); font-size: 20px; line-height: 1; }
 #install-app { min-height: 44px; padding: 8px 0; background: none; border: 0; font-size: 13px; text-decoration: underline; }
-.floating-whatsapp { position: fixed; left: 14px; right: 14px; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); z-index: 19; display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 12px 18px; border: 1px solid #25d366; border-radius: 50px; background: #25d366; color: #12372a; font-size: 14px; font-weight: 600; box-shadow: 0 4px 20px #0003; transition: background .2s, transform .2s; }
-.floating-whatsapp .icon { width: 23px; height: 23px; }
+.floating-whatsapp {
+  position: fixed;
+  right: calc(16px + env(safe-area-inset-right, 0px));
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  z-index: 19;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  border: 1px solid #25d366;
+  border-radius: 50%;
+  background: #25d366;
+  color: white;
+  box-shadow: 0 4px 18px #0003;
+  transition: background .2s, transform .2s;
+}
+.floating-whatsapp .icon { width: 30px; height: 30px; }
 .floating-whatsapp .icon use { stroke: white; }
 body.dialog-open .floating-whatsapp { visibility: hidden; }
 dialog {
@@ -317,7 +333,7 @@ dialog > p:not(.eyebrow) { color: var(--muted); margin-top: 20px; }
   .map-panel { height: 560px; border-top-left-radius: 130px; }
   .faq-grid { grid-template-columns: 1fr 1.4fr; gap: 72px; }
   .footer-top { flex-wrap: nowrap; }
-  .floating-whatsapp { left: auto; right: 24px; bottom: 24px; padding-inline: 20px; }
+  .floating-whatsapp { right: 24px; bottom: 24px; }
   footer { padding-bottom: 96px; }
 }
 @media (min-width: 1200px) {
