@@ -133,6 +133,13 @@ html:not(.js) .service-filters { display: none; }
 .service-image { position: relative; height: clamp(280px, 86vw, 380px); overflow: hidden; border-radius: 3px; }
 .photo-source { display: block; height: 100%; }
 .service-image img { width: 100%; height: 100%; transition: transform .7s; }
+/* Subtle display correction for the real photographs; original files stay intact. */
+img[src^="assets/images/real/"] {
+  filter: brightness(1.025) contrast(1.035) saturate(1.025);
+}
+img.brow-detail[src^="assets/images/real/"] {
+  filter: brightness(1.025) contrast(.985);
+}
 .service-card[data-category="cabelo"] img { object-position: 62% 40%; }
 .image-tag { pointer-events: none; position: absolute; top: 15px; left: 15px; background: var(--cream); padding: 6px 11px; font-size: 10px; letter-spacing: 1px; border-radius: 2px; }
 .service-body { padding-top: 20px; }
