@@ -1926,3 +1926,35 @@ body.dialog-open .floating-whatsapp { visibility: hidden; }
 @media (prefers-reduced-motion: reduce) {
   .result-photo img { transition: none; }
 }
+
+/* Social brand colors */
+.icon use[href="#i-whatsapp"] { stroke: #25d366; }
+.footer-social a.social-link {
+  color: #fff;
+  border: 0;
+  box-shadow: 0 3px 10px #32282014;
+  transition: transform .2s, box-shadow .2s;
+}
+.footer-social a.social-instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+.footer-social a.social-whatsapp { background: #25d366; }
+.footer-social a.social-facebook { background: #0866ff; }
+.footer-social .social-link .icon { color: #fff; stroke: #fff; }
+.footer-social .social-link use { stroke: #fff; }
+.footer-social .social-facebook use { fill: #fff; stroke: none; }
+.footer-social a.social-link:hover {
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px #32282026;
+}
+.floating-whatsapp {
+  background: #25d366;
+  border-color: #25d366;
+  color: #12372a;
+}
+.floating-whatsapp .icon use { stroke: #fff; }
+.floating-whatsapp:hover { background: #20c15b; border-color: #20c15b; }
+@media (prefers-reduced-motion: reduce) {
+  .footer-social a.social-link { transition: none; }
+}
