@@ -35,6 +35,8 @@
       content="https://maykonlong.github.io/studio_di_catarina/assets/images/real/cabelo-iluminado.webp"
       property="og:image"
     />
+    <meta content="Cabelo com mechas e ondas, trabalho real do Studio Di Catarina" property="og:image:alt" />
+    <meta content="Studio Di Catarina" property="og:site_name" />
     <meta content="summary_large_image" name="twitter:card" />
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -48,8 +50,8 @@
       href="assets/images/real/cabelo-iluminado.webp"
       rel="preload"
     />
-    <link href="styles.css?v=20261010-5" rel="stylesheet" />
-    <script defer="" src="script.js?v=20261010-3"></script>
+    <link href="styles.css?v=20261010-6" rel="stylesheet" />
+    <script defer="" src="script.js?v=20261010-4"></script>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -122,36 +124,36 @@
       xmlns="http://www.w3.org/2000/svg"
     >
       <defs>
-        <symbol id="i-arrow" viewbox="0 0 24 24">
+        <symbol id="i-arrow" viewBox="0 0 24 24">
           <path d="M5 12h14m-6-6 6 6-6 6"></path>
         </symbol>
-        <symbol id="i-up" viewbox="0 0 24 24">
+        <symbol id="i-up" viewBox="0 0 24 24">
           <path d="M6 18 18 6M6 6h12v12"></path>
         </symbol>
-        <symbol id="i-pin" viewbox="0 0 24 24">
+        <symbol id="i-pin" viewBox="0 0 24 24">
           <path d="M20 10c0 6-8 11-8 11S4 16 4 10a8 8 0 1 1 16 0Z"></path>
           <circle cx="12" cy="10" r="2.5"></circle>
         </symbol>
-        <symbol id="i-clock" viewbox="0 0 24 24">
+        <symbol id="i-clock" viewBox="0 0 24 24">
           <circle cx="12" cy="12" r="9"></circle>
           <path d="M12 7v5l3 2"></path>
         </symbol>
-        <symbol id="i-spark" viewbox="0 0 24 24">
+        <symbol id="i-spark" viewBox="0 0 24 24">
           <path
             d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3Z"
           ></path>
         </symbol>
-        <symbol id="i-scissors" viewbox="0 0 24 24">
+        <symbol id="i-scissors" viewBox="0 0 24 24">
           <circle cx="6" cy="6" r="3"></circle>
           <circle cx="6" cy="18" r="3"></circle>
           <path d="m8.5 7.5 12 13m-12-4 12-13"></path>
         </symbol>
-        <symbol id="i-instagram" viewbox="0 0 24 24">
+        <symbol id="i-instagram" viewBox="0 0 24 24">
           <rect height="18" rx="5" width="18" x="3" y="3"></rect>
           <circle cx="12" cy="12" r="4"></circle>
           <path d="M17.5 6.5h.01"></path>
         </symbol>
-        <symbol id="i-whatsapp" viewbox="0 0 24 24">
+        <symbol id="i-whatsapp" viewBox="0 0 24 24">
           <path
             d="M21 11.5a9 9 0 0 1-13.4 7.9L3 21l1.6-4.6A9 9 0 1 1 21 11.5Z"
           ></path>
@@ -159,10 +161,10 @@
             d="M8 7.5c-.7 2.7 3.8 7.2 6.5 6.5l1-1.5-2-1-1 1c-1.5-.5-2.5-1.5-3-3l1-1-1-2L8 7.5Z"
           ></path>
         </symbol>
-        <symbol id="i-close" viewbox="0 0 24 24">
+        <symbol id="i-close" viewBox="0 0 24 24">
           <path d="m6 6 12 12M6 18 18 6"></path>
         </symbol>
-        <symbol id="i-facebook" viewbox="0 0 24 24">
+        <symbol id="i-facebook" viewBox="0 0 24 24">
           <path
             d="M14 21v-8h3l.5-4H14V6.5c0-1 .5-1.5 1.5-1.5H18V2h-3c-3 0-5 2-5 5v2H7v4h3v8"
           ></path>
@@ -177,7 +179,7 @@
     <header class="header">
       <div class="container header-inner">
         <a aria-label="Studio Di Catarina — início" class="brand" href="#home"
-          ><img
+          ><img decoding="async"
             alt=""
             height="44"
             src="assets/images/icon-192.png"
@@ -189,6 +191,15 @@
             ></span
           ></a
         >
+        <button
+          aria-controls="main-nav"
+          aria-expanded="false"
+          aria-label="Abrir menu"
+          class="menu-toggle"
+          type="button"
+        >
+          <span></span><span></span>
+        </button>
         <nav aria-label="Navegação principal" id="main-nav">
           <a class="nav-link" href="#servicos">Nossos serviços</a
           ><a class="nav-link" href="#sobre">O Studio</a
@@ -205,18 +216,9 @@
           <svg aria-hidden="true" class="icon" focusable="false">
             <use href="#i-up"></use></svg
         ></a>
-        <button
-          aria-controls="main-nav"
-          aria-expanded="false"
-          aria-label="Abrir menu"
-          class="menu-toggle"
-          type="button"
-        >
-          <span></span><span></span>
-        </button>
       </div>
     </header>
-    <main id="conteudo">
+    <main id="conteudo" tabindex="-1">
       <section aria-labelledby="hero-title" class="hero container" id="home">
         <div class="hero-copy">
           <p class="eyebrow">
@@ -268,7 +270,7 @@
             rel="noopener"
             target="_blank"
           >
-            <img
+            <img decoding="async"
               alt="Cabelo com ondas e tons iluminados publicado pelo Studio Di Catarina no Instagram"
               fetchpriority="high"
               height="1200"
@@ -283,7 +285,7 @@
             rel="noopener"
             target="_blank"
           >
-            <img
+            <img decoding="async"
               alt="Cabelo escuro com corte em camadas publicado pelo Studio Di Catarina"
               height="640"
               src="assets/images/real/corte-movimento.webp"
@@ -314,7 +316,7 @@
         <div class="result-grid">
             <article class="result-card">
               <a class="result-photo" href="https://www.instagram.com/p/DI2fazaRByM/" target="_blank" rel="noopener" aria-label="Ver foto original: Mechas &amp; morena iluminada">
-                <img src="assets/images/real/cabelo-iluminado.webp" alt="Mechas &amp; morena iluminada — trabalho publicado pelo Studio Di Catarina" width="960" height="1200" loading="lazy" />
+                <img decoding="async" src="assets/images/real/cabelo-iluminado.webp" alt="Mechas &amp; morena iluminada — trabalho publicado pelo Studio Di Catarina" width="960" height="1200" loading="lazy" />
                 <span>TRABALHO REAL DO STUDIO <span aria-hidden="true">↗</span></span>
               </a>
               <div class="result-copy"><h3>Mechas &amp; morena iluminada</h3><p>Movimento e tons iluminados.</p>
@@ -324,7 +326,7 @@
             </article>
             <article class="result-card">
               <a class="result-photo" href="https://www.instagram.com/p/DI2eiXRRdnv/" target="_blank" rel="noopener" aria-label="Ver foto original: Corte em camadas">
-                <img src="assets/images/real/corte-movimento.webp" alt="Corte em camadas — trabalho publicado pelo Studio Di Catarina" width="512" height="640" loading="lazy" />
+                <img decoding="async" src="assets/images/real/corte-movimento.webp" alt="Corte em camadas — trabalho publicado pelo Studio Di Catarina" width="512" height="640" loading="lazy" />
                 <span>TRABALHO REAL DO STUDIO <span aria-hidden="true">↗</span></span>
               </a>
               <div class="result-copy"><h3>Corte em camadas</h3><p>Um visual cheio de movimento.</p>
@@ -334,7 +336,7 @@
             </article>
             <article class="result-card">
               <a class="result-photo" href="https://www.instagram.com/p/CkBg963uy2v/" target="_blank" rel="noopener" aria-label="Ver foto original: Cachos com personalidade">
-                <img src="assets/images/real/cachos.webp" alt="Cachos com personalidade — trabalho publicado pelo Studio Di Catarina" width="512" height="640" loading="lazy" />
+                <img decoding="async" src="assets/images/real/cachos.webp" alt="Cachos com personalidade — trabalho publicado pelo Studio Di Catarina" width="512" height="640" loading="lazy" />
                 <span>TRABALHO REAL DO STUDIO <span aria-hidden="true">↗</span></span>
               </a>
               <div class="result-copy"><h3>Cachos com personalidade</h3><p>Seu cabelo, com a sua identidade.</p>
@@ -344,7 +346,7 @@
             </article>
             <article class="result-card">
               <a class="result-photo" href="https://www.facebook.com/photo/?fbid=1570281414597515" target="_blank" rel="noopener" aria-label="Ver foto original: Design de sobrancelhas">
-                <img class="brow-detail" src="assets/images/real/sobrancelhas.webp" alt="Detalhe da sobrancelha — trabalho publicado pelo Studio Di Catarina" width="750" height="1000" loading="lazy" />
+                <img decoding="async" class="brow-detail" src="assets/images/real/sobrancelhas.webp" alt="Detalhe da sobrancelha — trabalho publicado pelo Studio Di Catarina" width="750" height="1000" loading="lazy" />
                 <span>TRABALHO REAL DO STUDIO <span aria-hidden="true">↗</span></span>
               </a>
               <div class="result-copy"><h3>Design de sobrancelhas</h3><p>Detalhes que valorizam a expressão.</p>
@@ -411,7 +413,8 @@
               Sobrancelhas &amp; cílios
             </button>
           </div>
-          <div aria-live="polite" class="service-grid">
+          <p id="service-status" class="visually-hidden" role="status"></p>
+          <div class="service-grid">
             <article class="service-card" data-category="cabelo">
               <div class="service-image">
                 <a
@@ -420,7 +423,7 @@
                   href="https://www.instagram.com/p/DI2fazaRByM/"
                   rel="noopener"
                   target="_blank"
-                  ><img
+                  ><img decoding="async"
                     alt="Foto real de cabelo ondulado publicada pelo Studio no Instagram"
                     height="1200"
                     loading="lazy"
@@ -452,7 +455,7 @@
             </article>
             <article class="service-card" data-category="unhas">
               <div class="service-image">
-                <img
+                <img decoding="async"
                   alt="Imagem ilustrativa de manicure delicada em tons nude"
                   height="480"
                   loading="lazy"
@@ -491,7 +494,7 @@
                   href="https://www.facebook.com/photo/?fbid=1570281414597515"
                   rel="noopener"
                   target="_blank"
-                  ><img
+                  ><img decoding="async"
                     class="brow-detail"
                     alt="Detalhe do design de sobrancelhas publicado pelo Studio no Facebook"
                     height="1000"
@@ -535,16 +538,6 @@
         id="sobre"
       >
         <div class="container about-grid">
-          <div class="care-steps">
-            <p class="eyebrow">DO DESEJO AO SEU NOVO VISUAL</p>
-            <h3>Seu cuidado começa<br /><em>com uma conversa.</em></h3>
-            <ol>
-              <li><span>01</span><div><h4>Escolha o seu cuidado</h4><p>Explore os serviços e salve o visual que combina com você.</p></div></li>
-              <li><span>02</span><div><h4>Converse com a equipe</h4><p>Conte o que deseja e consulte valores e horários pelo WhatsApp.</p></div></li>
-              <li><span>03</span><div><h4>Combine o seu momento</h4><p>A equipe confirma os detalhes e o agendamento com você.</p></div></li>
-            </ol>
-            <a class="text-link" data-booking href="https://wa.me/5511910618237" target="_blank" rel="noopener">Vamos conversar <span aria-hidden="true">↗</span></a>
-          </div>
           <div class="about-copy">
             <p class="eyebrow">BEM-VINDA AO DI CATARINA</p>
             <h2 id="about-title">
@@ -583,16 +576,26 @@
                 <use href="#i-arrow"></use></svg
             ></a>
           </div>
+          <div class="care-steps">
+            <p class="eyebrow">DO DESEJO AO SEU NOVO VISUAL</p>
+            <h3>Seu cuidado começa<br /><em>com uma conversa.</em></h3>
+            <ol>
+              <li><span>01</span><div><h4>Escolha o seu cuidado</h4><p>Explore os serviços e salve o visual que combina com você.</p></div></li>
+              <li><span>02</span><div><h4>Converse com a equipe</h4><p>Conte o que deseja e consulte valores e horários pelo WhatsApp.</p></div></li>
+              <li><span>03</span><div><h4>Combine o seu momento</h4><p>A equipe confirma os detalhes e o agendamento com você.</p></div></li>
+            </ol>
+            <a class="text-link" data-booking href="https://wa.me/5511910618237" target="_blank" rel="noopener">Vamos conversar <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
       </section>
-      <section class="booking-banner">
+      <section aria-labelledby="banner-title" class="booking-banner">
         <div class="container">
           <svg aria-hidden="true" class="banner-spark icon">
             <use href="#i-spark"></use>
           </svg>
           <div>
             <p class="eyebrow">VOCÊ MERECE ESSE MOMENTO</p>
-            <h2>Que tal se escolher <em>hoje?</em></h2>
+            <h2 id="banner-title">Que tal se escolher <em>hoje?</em></h2>
             <p>
               Conte para a gente o que você tem em mente. O cuidado começa na
               conversa.
@@ -698,11 +701,11 @@
           ></a>
         </div>
       </section>
-      <section class="faq section-pad" id="faq">
+      <section aria-labelledby="faq-title" class="faq section-pad" id="faq">
         <div class="container faq-grid">
           <div>
             <p class="eyebrow">ANTES DO SEU MOMENTO</p>
-            <h2>Vamos tirar<br /><em>suas dúvidas?</em></h2>
+            <h2 id="faq-title">Vamos tirar<br /><em>suas dúvidas?</em></h2>
             <p>Estamos a uma mensagem de distância.</p>
             <a
               class="text-link"
@@ -830,7 +833,7 @@
         <use href="#i-whatsapp"></use></svg
       ><span>Agendar pelo WhatsApp</span>
     </a>
-    <dialog aria-labelledby="booking-title" id="booking-dialog">
+    <dialog aria-describedby="booking-description" aria-labelledby="booking-title" id="booking-dialog">
       <button
         aria-label="Fechar agendamento"
         class="dialog-close"
@@ -842,7 +845,7 @@
       </button>
       <p class="eyebrow">UM TEMPO SÓ SEU</p>
       <h2 id="booking-title">Seu próximo<br /><em>momento de cuidado.</em></h2>
-      <p>
+      <p id="booking-description">
         Escolha o serviço e fale com a equipe para consultar valores e horários.
       </p>
       <form id="booking-form">

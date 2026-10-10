@@ -1,12 +1,12 @@
-const VERSION = "di-catarina-v10";
+const VERSION = "di-catarina-v11";
 const BASE = new URL("./", self.location.href);
 const ASSETS = [
   "./",
   "index.html",
   // Versioned URLs bypass the original cache-first worker on the first visit
   // after an update, before this worker has installed and claimed the page.
-  "styles.css?v=20261010-5",
-  "script.js?v=20261010-3",
+  "styles.css?v=20261010-6",
+  "script.js?v=20261010-4",
   "manifest.json",
   "assets/images/real/cabelo-iluminado.webp",
   "assets/images/real/corte-movimento.webp",
@@ -64,7 +64,12 @@ self.addEventListener("fetch", (event) => {
           response.ok &&
           (request.mode === "navigate" || ASSETS.includes(url.href))
         ) {
-          await cache.put(request, response.clone());
+          // A full/unavailable cache must never discard a successful response.
+          try {
+            await cache.put(request, response.clone());
+          } catch {
+            // Offline storage is optional; the online resource is still usable.
+          }
         }
         return response;
       } catch {

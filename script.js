@@ -6,19 +6,22 @@ function closeMenu() {
   navigation.classList.remove("open");
   menuToggle.setAttribute("aria-expanded", "false");
   menuToggle.setAttribute("aria-label", "Abrir menu");
-  document.body.classList.remove("menu-open");
 }
 menuToggle.addEventListener("click", () => {
   const open = menuToggle.getAttribute("aria-expanded") !== "true";
   navigation.classList.toggle("open", open);
   menuToggle.setAttribute("aria-expanded", String(open));
   menuToggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
-  document.body.classList.toggle("menu-open", open);
 });
 navigation
   .querySelectorAll("a")
   .forEach((link) => link.addEventListener("click", closeMenu));
 document.addEventListener("click", (event) => {
+  if (!event.target.closest(".header")) closeMenu();
+});
+// This is a disclosure, not a modal: Tab follows the page and closes the menu
+// once focus leaves the header.
+document.addEventListener("focusin", (event) => {
   if (!event.target.closest(".header")) closeMenu();
 });
 document.addEventListener("keydown", (event) => {
@@ -27,7 +30,7 @@ document.addEventListener("keydown", (event) => {
     menuToggle.focus();
   }
 });
-window.matchMedia("(min-width: 901px)").addEventListener("change", (event) => {
+window.matchMedia("(min-width: 960px)").addEventListener("change", (event) => {
   if (event.matches) closeMenu();
 });
 const filters = document.querySelectorAll("[data-filter]");
@@ -44,6 +47,9 @@ filters.forEach((button) =>
       card.hidden = category !== "all" && card.dataset.category !== category;
     });
     serviceGrid.classList.toggle("is-filtered", category !== "all");
+    const count = document.querySelectorAll("[data-category]:not([hidden])").length;
+    document.querySelector("#service-status").textContent =
+      count === 1 ? "1 categoria de cuidados exibida." : `${count} categorias de cuidados exibidas.`;
   }),
 );
 const dialog = document.querySelector("#booking-dialog");
@@ -114,27 +120,32 @@ bookingForm.addEventListener("submit", (event) => {
   continueLink.click();
 });
 continueLink.addEventListener("click", () => dialog.close());
-if ("IntersectionObserver" in window) {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting)
-          document
-            .querySelectorAll(".nav-link")
-            .forEach((link) =>
-              link.classList.toggle(
-                "active",
-                link.hash === `#${entry.target.id}`,
-              ),
-            );
-      });
-    },
-    { rootMargin: "-15% 0px -55% 0px", threshold: 0 },
-  );
-  document
-    .querySelectorAll("main section[id]")
-    .forEach((section) => observer.observe(section));
+// Section rectangles also handle tall galleries and fast anchor navigation.
+const sections = [...document.querySelectorAll("main section[id]")];
+const navLinks = [...document.querySelectorAll(".nav-link")];
+let navigationFrame = false;
+function updateActiveNavigation() {
+  navigationFrame = false;
+  const boundary = document.querySelector(".header").getBoundingClientRect().height + 80;
+  const current = sections.filter((section) => section.getBoundingClientRect().top <= boundary).at(-1);
+  navLinks.forEach((link) => {
+    const active = current && link.hash === `#${current.id}`;
+    link.classList.toggle("active", Boolean(active));
+    if (active) link.setAttribute("aria-current", "location");
+    else link.removeAttribute("aria-current");
+  });
 }
+function scheduleActiveNavigation() {
+  if (navigationFrame) return;
+  navigationFrame = true;
+  requestAnimationFrame(updateActiveNavigation);
+}
+window.addEventListener("scroll", scheduleActiveNavigation, { passive: true });
+window.addEventListener("resize", scheduleActiveNavigation);
+window.addEventListener("hashchange", scheduleActiveNavigation);
+window.addEventListener("load", scheduleActiveNavigation);
+scheduleActiveNavigation();
+
 document.querySelector("#year").textContent = new Date().getFullYear();
 let installPrompt;
 const installButton = document.querySelector("#install-app");
