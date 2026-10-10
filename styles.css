@@ -1955,6 +1955,12 @@ body.dialog-open .floating-whatsapp { visibility: hidden; }
 }
 .floating-whatsapp .icon use { stroke: #fff; }
 .floating-whatsapp:hover { background: #20c15b; border-color: #20c15b; }
+.result-photo img.brow-detail,
+.service-card[data-category="olhar"] img.brow-detail {
+  object-position: 50% 35%;
+  transform-origin: 56% 43%;
+  transform: scale(2.3);
+}
 @media (prefers-reduced-motion: reduce) {
   .footer-social a.social-link { transition: none; }
 }
