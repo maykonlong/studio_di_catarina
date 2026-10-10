@@ -209,8 +209,9 @@ footer { padding-block: 36px 28px; }
 .social-instagram { background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%); }
 .social-whatsapp { background: #25d366; }
 .social-facebook { background: #0866ff; }
-.icon use[href="#i-whatsapp"] { stroke: #25d366; }
+.icon use[href="#i-whatsapp"] { fill: #25d366; stroke: none; }
 .footer-social .social-link .icon, .footer-social .social-link use { color: white; stroke: white; }
+.footer-social .social-whatsapp use { fill: white; stroke: none; }
 .footer-social .social-facebook use { fill: white; stroke: none; }
 .footer-bottom { border-top: 1px solid var(--line); padding-top: 22px; display: flex; flex-direction: column; align-items: flex-start; gap: 12px; font-size: 12px; color: var(--muted); }
 .footer-bottom > span:last-of-type { display: flex; gap: 15px; align-items: center; }
@@ -221,8 +222,9 @@ footer { padding-block: 36px 28px; }
   right: calc(16px + env(safe-area-inset-right, 0px));
   bottom: calc(16px + env(safe-area-inset-bottom, 0px));
   z-index: 19;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 56px;
   height: 56px;
   padding: 0;
@@ -230,11 +232,12 @@ footer { padding-block: 36px 28px; }
   border-radius: 50%;
   background: #25d366;
   color: white;
+  line-height: 1;
   box-shadow: 0 4px 18px #0003;
   transition: background .2s, transform .2s;
 }
-.floating-whatsapp .icon { width: 30px; height: 30px; }
-.floating-whatsapp .icon use { stroke: white; }
+.floating-whatsapp .icon { display: block; width: 30px; height: 30px; fill: white; stroke: none; }
+.floating-whatsapp .icon use { fill: white; stroke: none; }
 body.dialog-open .floating-whatsapp { visibility: hidden; }
 dialog {
   width: calc(100% - 32px); max-width: 500px;

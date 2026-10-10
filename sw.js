@@ -1,11 +1,11 @@
-const VERSION = "di-catarina-v13";
+const VERSION = "di-catarina-v14";
 const BASE = new URL("./", self.location.href);
 const ASSETS = [
   "./",
   "index.html",
   // Versioned URLs bypass the original cache-first worker on the first visit
   // after an update, before this worker has installed and claimed the page.
-  "styles.css?v=20261010-8",
+  "styles.css?v=20261010-9",
   "script.js?v=20261010-4",
   "manifest.json",
   "assets/images/real/cabelo-iluminado.webp",
