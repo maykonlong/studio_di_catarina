@@ -39,6 +39,8 @@ test("unique anchors, local assets and accessible image/form names", () => {
 test("production URLs, approved contacts and real photo references stay consistent", () => {
   const schema = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
   assert.equal(schema.url, base);
+  assert.equal(schema["@id"], `${base}#studio`);
+  assert.equal(schema.areaServed.name, "Barueri");
   assert.equal(schema.telephone, "+5511910618237");
   assert.equal(schema.address.streetAddress, "Rua Frei Henrique Soares de Coimbra, 77 — Parque Imperial");
   assert.equal(nodes.find((n) => n.attrs.rel === "canonical").attrs.href, base);
@@ -54,6 +56,21 @@ test("production URLs, approved contacts and real photo references stay consiste
   for (const match of read("sitemap.xml").matchAll(/<(?:image:)?loc>(.*?)<\//g)) assert.ok(match[1].startsWith(base));
   assert.ok(read("llms.txt").includes("Coimbra, 77"));
   assert.doesNotMatch(html, /fachada|studiodicatarina\.com\.br|Coimbra, 251/i);
+});
+
+test("search snippets, answers and sitemap match the business", () => {
+  const description = nodes.find((n) => n.tag === "meta" && n.attrs.name === "description").attrs.content;
+  assert.match(description, /Parque Imperial, Barueri/);
+  assert.match(description, /alisamento sem formol/);
+  assert.match(html, /Não fazemos unhas em gel nem em fibra/);
+  assert.match(html, /Atendemos de segunda a sábado a partir das 7h/);
+  const sitemap = read("sitemap.xml");
+  assert.match(sitemap, /<lastmod>2026-10-22<\/lastmod>/);
+  assert.doesNotMatch(sitemap, /<image:title>|<changefreq>|<priority>/);
+  for (const [, image] of sitemap.matchAll(/<image:loc>(.*?)<\/image:loc>/g)) {
+    assert.ok(image.startsWith(base));
+    assert.ok(fs.existsSync(path.join(root, image.slice(base.length))));
+  }
 });
 
 test("business hours and appointment requirement stay consistent", () => {
