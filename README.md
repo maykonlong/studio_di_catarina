@@ -20,7 +20,7 @@ npm run check
 
 - CSS mobile first: layout de celular como base e melhorias progressivas para tablet e desktop com media queries de largura mínima.
 - Controles principais com pelo menos 44 px de altura, campos de formulário com fonte de 16 px e espaço para a área segura do celular.
-- Serviços organizados por cabelo, unhas e sobrancelhas/cílios, com filtros.
+- Serviços organizados por cabelo, unhas e sobrancelhas, com filtros.
 - Agendamento acessível em diálogo nativo, com escolha de procedimento e mensagem personalizada no WhatsApp. A equipe confirma valores e disponibilidade; o site não efetua reservas automaticamente.
 - Instagram, Google Maps, Waze, endereço, horários e perguntas frequentes.
 - PWA com cache offline e instalação quando suportada pelo navegador.
