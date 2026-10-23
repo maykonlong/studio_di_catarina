@@ -56,6 +56,19 @@ test("production URLs, approved contacts and real photo references stay consiste
   assert.doesNotMatch(html, /fachada|studiodicatarina\.com\.br|Coimbra, 251/i);
 });
 
+test("business hours and appointment requirement stay consistent", () => {
+  const schema = JSON.parse(html.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1]);
+  assert.deepEqual(schema.openingHoursSpecification.dayOfWeek, [
+    "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",
+  ]);
+  assert.equal(schema.openingHoursSpecification.opens, "07:00");
+  assert.equal(schema.openingHoursSpecification.closes, "19:00");
+  assert.match(html, /Segunda a sábado, das 7h às 19h/);
+  assert.match(html, /Atendimento mediante\s+agendamento/);
+  assert.match(html, /Atendemos de segunda a sábado, das 7h às 19h, com\s+agendamento prévio/);
+  assert.match(read("llms.txt"), /segunda a sábado, das 7h às 19h, mediante agendamento/);
+});
+
 test("versioned styles/scripts are available offline and mobile is the CSS base", () => {
   const sw = read("sw.js");
   const assets = [...sw.split("const ASSETS = [")[1].split("].map")[0].matchAll(/"([^"]+)"/g)].map((m) => m[1]);

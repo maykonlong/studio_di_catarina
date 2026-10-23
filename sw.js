@@ -1,4 +1,4 @@
-const VERSION = "di-catarina-v15";
+const VERSION = "di-catarina-v16";
 const BASE = new URL("./", self.location.href);
 const ASSETS = [
   "./",
