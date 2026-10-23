@@ -33,8 +33,6 @@ Os serviços e horários vieram do repositório original e foram revisados pelo 
 
 O endereço canônico, os metadados sociais e o sitemap usam a publicação em `https://maykonlong.github.io/studio_di_catarina/`. Google Fonts e o mapa dependem de conexão, com fontes de sistema e links de rota como alternativas.
 
-Em 22/10/2026, os horários foram alinhados à ficha pública do Studio Di Catarina no Google: terça a sexta, 10h–19h; sábado, 9h–14h. A ficha ainda aponta para `studiodicatarina.com.br`, que não resolveu na verificação; o responsável pelo Perfil da Empresa deve trocar o campo "Site" pela URL canônica acima. O sitemap deste projeto precisa ser enviado pelo Google Search Console para acompanhar indexação e consultas.
-
 Publique os arquivos estáticos em um host HTTPS. O `server.js` é apenas para desenvolvimento local. Ao alterar CSS ou JavaScript, atualize o parâmetro `v` dos respectivos links em `index.html` e na lista `ASSETS` de `sw.js`, além da versão do cache. Os parâmetros devem coincidir nos dois arquivos. Isso evita misturar HTML novo com recursos antigos mesmo quando o service worker original ainda controla a primeira navegação após a publicação.
 
 ## Verificação e busca
